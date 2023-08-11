@@ -88,13 +88,14 @@ fun main() {
 
     println(floor(raiz).toInt())
 
+// redondeo hacia arriba
     println(ceil(raiz).toInt())
 
 
     // ESTRUCTURAS
     // CONDICIONALES IF - ELSE
 
-    var edad:Int
+    var edad=0
     println("Ingrese su edad")
     edad = readln().toInt()
     if(edad >= 18 ){
@@ -143,7 +144,7 @@ fun main() {
     }
 */
     // DO WHILE
-
+/*
     var f = 100
 
     do{
@@ -154,8 +155,93 @@ fun main() {
 
 
     }while (f>=1)
+*/
+
+/*
+    var numero = 1
+
+    when (numero) {
+        1 -> {
+
+            println("EL NUMERO QUE INGRESO: ")
+            println("NO ES IGUAL")
+        }
+        2 -> println("NO ES IGUAL")
+        3 -> println("Si es igUal")
+        else ->
+            println("NUMERO NO ENCONTRADO")
+    }
+*/
+/*
+    var combustible = "gasolina"
+
+    when (combustible){
+
+        "gasolina", "diesel"-> println("NO ES ES UN CARRO ELECTRICO ")
+
+        else -> println("EL CARRO ES ELECTRICO ")
+
+    }
+*/
+    /*
+    var edad = 24
+
+    when(edad){
+
+        in 1..10 -> println("ES UN NIÑO")
+        in 11..17 -> println("ES UN ADOLESCENTE")
+        in 18..29 -> println("ES UN ADULTO JOVEN")
+
+    }
+*/
+
+    // ARREGLOS
+
+    // arrayof: Me permiten almacenar cualquier tipo de dato
+
+/*
+    var estudiantes = arrayOf("LORENA", "PEDRO", "LUIS",20,58,67)
+
+    println(estudiantes[4])
+
+    println(estudiantes.size)
+*/
+
+    var numeros = intArrayOf(12,45,67,19)
+/*
+    println(numeros[0])
+    println(numeros[1])
+    println(numeros[2])
+    println(numeros[3])
+*//*
+    for (i in 0 until numeros.size){
+        println(numeros[i])
+    }
+*/
+
+    // USO DE LOS ARRAYLIST
+
+    // arrayListOf<String> La lista va a ser de tipo string
+    // sino le especifico el tipod e dato lo que sucede es que la lisra recibe cualquier tipo de dato
 
 
+    var miLista = arrayListOf("Lorena","pedro",20,58,41)
+
+    var num1 = miLista[2] as Int
+
+    var num2 = miLista[3] as Int
+
+  //  var nombre:String = miLista[0] as String + miLista[2]
+   // println(nombre)
+
+   // println(num1+num2)
+
+
+    miLista.forEachIndexed{i, est ->
+
+        println("$i - $est")
+
+    }
 
 
 
